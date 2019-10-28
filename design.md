@@ -51,3 +51,7 @@ diacritic X̪
   | otherwise        = TypeError
 ```
 
+# Problems
+
+- We need to be able to treat n-graphs to avoid treating (for example) IPA labial-velars and affricates like contour segments - they're units that just happen to be written with multiple characters.
+- The same diacritic can be used pre- and post-base with different meanings - e.g. ⁿp vs. pⁿ.
